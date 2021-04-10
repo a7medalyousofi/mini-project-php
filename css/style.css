@@ -1,0 +1,152 @@
+* {
+  user-select: none;
+}
+
+body {
+  background-color: #fff;
+  color: #1e2140;
+  font-family: "Rubik", Arial, sans-serif;
+}
+
+header {
+  background: #337ab7;
+  padding: 10px 0;
+}
+header img {
+  width: 250px;
+}
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  header img {
+    width: 180px;
+  }
+}
+
+.text-muted {
+  margin-top: 0;
+}
+
+.heading {
+  padding: 2rem 0 0.5rem;
+  text-align: center;
+}
+.heading p {
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  .heading p {
+    font-size: 1.1rem;
+  }
+}
+
+.container .form-control {
+  padding: 0.375rem 0.5rem;
+}
+
+form ul {
+  margin: 0;
+  padding: 0;
+}
+form > div:not(:last-child) {
+  padding: 20px 0;
+}
+form > div:not(:last-child):focus-within {
+  background: #f1f5ff;
+}
+@media (max-width: 767px) {
+  form > div:not(:last-child) {
+    padding: 15px 0;
+  }
+}
+form .card-header .head {
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+form .card-header small {
+  margin-left: 10px;
+}
+form .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas: ". . . ." ". . . .";
+}
+form .appearing-container {
+  display: flex;
+  justify-content: space-between;
+}
+form .appearing-container .year .yearRatio {
+  display: flex;
+}
+form .appearing-container .year .yearRatio > div:not(:first-child) {
+  margin-left: 25px;
+}
+form .appearing-container .semester .semRatio {
+  display: flex;
+}
+form .appearing-container .semester .semRatio > div:not(:first-child) {
+  margin-left: 25px;
+}
+form .appearing-container .appearing .appRatio {
+  display: flex;
+  justify-content: space-between;
+}
+form .appearing-container .appearing .appRatio > div:not(:first-child) {
+  margin-left: 25px;
+}
+@media (max-width: 991.98px) {
+  form .appearing-container {
+    display: block;
+  }
+  form .appearing-container > div:not(:last-child) {
+    margin-bottom: 20px;
+    justify-content: initial;
+  }
+}
+@media (max-width: 425.98px) {
+  form .card-header small {
+    margin-left: 0px;
+  }
+  form .card-body {
+    padding: 1rem;
+  }
+  form .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas: ". . ." ". . ." ". . .";
+  }
+  form .appearing-container .appearing .appRatio {
+    display: block;
+  }
+  form .appearing-container .appearing .appRatio > div:not(:first-child) {
+    margin-left: 0px;
+  }
+  form .appearing-container .appearing .appRatio > div:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+form button {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+form button.btn-primary {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+@media (max-width: 426px) {
+  form button {
+    display: block;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
